@@ -15,7 +15,7 @@
 <!-- 导航侧栏 /-->
 <!-- 内容区域 -->
 <div class="content-wrapper" >
-    <h1>权限不足</h1>
+    <h1>权限不</h1>
     <a href="${pageContext.request.contextPath}/pages/main.jsp">返回</a>
 </div>
 <jsp:include page="/pages/js.jsp"></jsp:include>
