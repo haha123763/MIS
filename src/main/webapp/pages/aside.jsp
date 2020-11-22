@@ -81,10 +81,6 @@
 								<i class="fa fa-circle-o"></i> 专利成果管理
 							</a>
 						</li>
-						<li id="">
-							<a href="${pageContext.request.contextPath}/softWork/findAll.do">
-								<i class="fa fa-circle-o"></i> 软著成果管理
-							</a>
 					</li>
 					</secuity:authorize>
 					<secuity:authorize access="hasRole('ROLE_USER')">
@@ -101,11 +97,6 @@
 						<li id="">
 							<a href="${pageContext.request.contextPath}/patent/findById.do">
 								<i class="fa fa-circle-o"></i> 专利成果管理
-							</a>
-						</li>
-						<li id="">
-							<a href="${pageContext.request.contextPath}/softWork/findById.do">
-								<i class="fa fa-circle-o"></i> 软著成果管理
 							</a>
 						</li>
 					</secuity:authorize>

@@ -14,10 +14,10 @@
 	http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <!-- 开启注解扫描，管理service和dao -->
-    <context:component-scan base-package="com.itheima.ssm.service">
+    <context:component-scan base-package="ssm.service">
     </context:component-scan>
 
-<!--    <context:component-scan base-package="com.itheima.ssm.dao">
+<!--    <context:component-scan base-package="ssm.dao">
     </context:component-scan>-->
 
     <context:property-placeholder location="classpath:db.properties"/>
@@ -33,7 +33,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
 
-        <property name="mapperLocations" value="classpath:com/itheima/ssm/dao/*.xml"></property>
+        <property name="mapperLocations" value="classpath:ssm/dao/*.xml"></property>
         <!-- 传入PageHelper的插件 -->
         <property name="plugins">
             <array>
@@ -53,7 +53,7 @@
 
     <!-- 定义Mapper接口扫描器：让其自动生成接口的代理实现类 -->
     <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.itheima.ssm.dao"/>
+        <property name="basePackage" value="ssm.dao"/>
     </bean>
 
 
